@@ -63,11 +63,21 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+    ##add a new toy when the when the toy form is submitted
+    error given when trying to submit gave a ststus of 500, which pointed to the server
+    the error was uninitialized name constant, which pointed out to the misspelling of toys
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  error given was unexpected end of JSON input
+  this pointed out to either not using controllers in the JSON format or my fetch request
+  rendered my request in JSON format and it accepted
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  the railes logs and the network pointed out to a routingerror, the route didnt exitst,
+  in the resources sectins in routes.rb, added the :destroy symbol to the array of routes permitted
+
+
